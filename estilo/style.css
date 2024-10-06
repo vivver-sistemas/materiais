@@ -43,7 +43,7 @@ main {
     min-width: 300px;
     max-width: 800px;
     background-color: white;
-    margin: 300px 2px 300px 2px;
+    margin: 800px 2px 800px 2px;
     margin: auto;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.422);
 }
@@ -79,11 +79,11 @@ div.modulos {
     padding: 20px 0px 20px 0px;
     margin-bottom: 280px;
     border-radius: 20px 0px 20px 0px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.374);
 }
 
 div.modulos p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 div.modulos a {
