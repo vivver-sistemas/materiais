@@ -97,7 +97,7 @@ div.link a:hover {
 
 div.linkacesso {
     margin: auto;
-    margin: 70px 0px 180px 0px;
+    margin: 70px 0px 80px 0px;
 }
 
 div.linkacesso strong{
@@ -113,6 +113,7 @@ div.linkacesso strong{
 
 div.modulos p {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 div.modulos a{
