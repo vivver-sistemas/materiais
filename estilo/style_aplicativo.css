@@ -39,7 +39,7 @@ header img {
 }
 
 main {
-    height: 900px;
+    height: 930px;
     min-width: 300px;
     max-width: 800px;
     background-color: white;
@@ -126,7 +126,7 @@ form {
 }
 
 .textToCopy {
-    width: 500px;
+    max-width: 200px;
     padding: 1px 15px;
     font-size: 1.1em;
     text-align: center;
