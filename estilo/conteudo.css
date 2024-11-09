@@ -99,6 +99,9 @@ div.materiais a {
     text-decoration: none;
 }
 
+div.materiais span {
+    padding-left: 18px;
+}
 
 div.modulos p {
     text-align: center;
