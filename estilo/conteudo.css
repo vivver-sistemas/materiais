@@ -104,8 +104,10 @@ div.materiais span {
 }
 
 div.modulos p {
+    background-color: rgb (0, 0, 0, 0);
     text-align: center;
     margin-top: 120px;
+    border: none;
 }
 
 div.modulos a{
