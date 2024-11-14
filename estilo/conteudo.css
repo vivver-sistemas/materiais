@@ -62,7 +62,7 @@ main h1 {
     color: var(--cor1);
     font-size: 3.5em;
     text-align: center;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.353);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.353);
     padding: 20px 0px 0px 0px
 }
 
@@ -114,11 +114,13 @@ div.modulos a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border: none;
-    background-color: rgb (0, 0, 0, 0);
     color: var(--cor1);
-    text-decoration-style: solid;
 }
-    
+
+div.modulos a:hover {
+    color: rgba(218, 3, 3, 0.977);
+}
+
 footer {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     color: white;
