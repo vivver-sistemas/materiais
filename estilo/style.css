@@ -34,13 +34,13 @@ header p {
 }
 
 header img {
-    width: 380px;
+    max-width: 60%;
     border-bottom: 1px solid white;
 
 }
 
 main {
-    height: 700px;
+    height: 70%;
     margin-top: 100px;
 }
 
@@ -58,8 +58,8 @@ div.modulos {
     padding: 20px 0px 20px 0px;
     border-radius: 50px 0px 50px 0px;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.374);
-    border-top: 7px solid white;
-    border-bottom: 7px solid white;
+    border-top: 7px solid var(--cor1);
+    border-bottom: 7px solid var(--cor1);
 }
 
 
@@ -83,16 +83,22 @@ footer {
     color: white;
     font-family: var(--fonte1);
     text-align: center;
-    padding: 10px;
-    border-top: 1px solid white;
+    padding: 15px;
+    
     margin: auto;
     margin-top: 30px;
 
-}
+    & p {
+        max-width: 60%;
+        margin: auto;
+        padding-top: 10px;
+        border-top: 1px solid white;
 
-footer a {
-    text-align: center;
-    font-family: var(--fonte1);
-    color: white;
-    text-decoration: none;
-}
+    }
+
+    & a {
+            font-family: var(--fonte1);
+            color: white;
+            text-decoration: none;
+        }
+    }
