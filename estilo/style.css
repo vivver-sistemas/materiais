@@ -21,7 +21,7 @@
 }
 
 body, html {
-    background-color: green; 
+    background-color: black; 
     height: 700px;
 }
 
@@ -30,19 +30,20 @@ header {
 }
 
 header p {
+    max-width: 80%;
     text-align: center;
+    border-bottom: 1px solid white;
+    margin: auto;
 }
 
 header img {
-    max-width: 70%;
-    border-bottom: 1px solid white;
-
+    max-width: 75%;
 }
 
 main {
     background-color: black;
     height: 100%;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 72px;
 }
 
@@ -90,11 +91,10 @@ footer {
     padding: 10px;
 
     & p {
-        max-width: 60%;
+        max-width: 80%;
         padding-top: 5px;
         margin: auto;
         border-top: 1px solid white;
-
     }
 
     & a {
