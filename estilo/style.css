@@ -30,14 +30,14 @@ header {
 }
 
 header p {
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
     border-bottom: 1px solid white;
     margin: auto;
 }
 
 header img {
-    max-width: 75%;
+    max-width: 90%;
 }
 
 main {
@@ -91,7 +91,7 @@ footer {
     padding: 10px;
 
     & p {
-        max-width: 80%;
+        max-width: 90%;
         padding-top: 5px;
         margin: auto;
         border-top: 1px solid white;
