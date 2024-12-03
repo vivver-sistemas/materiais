@@ -85,10 +85,13 @@ footer {
     text-align: center;
     padding: 10px;
     border-top: 1px solid white;
+    margin: auto;
     margin-top: 30px;
+
 }
 
 footer a {
+    text-align: center;
     font-family: var(--fonte1);
     color: white;
     text-decoration: none;
