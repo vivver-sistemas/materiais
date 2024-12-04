@@ -117,10 +117,28 @@ div.materiais {
     opacity: 0;
 }
 
+#card-amb {
+    width: 320px;
+}
+
+#card-bi {
+    height: 80px;
+    width: 230px;
+}
+
+#card-document {
+    height: 200px;
+    width: 350px;
+    }
+
+
+#content-amb {
+    padding-top: 13px;
+    padding-left: 3px;
+}
 
 #contentbi {
     padding-top: 10px;
-    height: 80px;
     margin-top: 120px;
 }
 
@@ -130,29 +148,51 @@ div.materiais {
 
 #content-documentos {
     height: 200px;
+    padding-top: 17px;
+
+    & p {
+        margin-bottom: 15px;
+    }
+
+    & #p-document {
+        margin-bottom: 30px;
+    }
 }
 
 
 div.materiais p {
     color: rgba(218, 3, 3, 0.977);
     text-align: left;
-    padding-top: 13px;
-    padding-left: 15px;
+    margin-bottom: 10px;
 }
 
 div.materiais a {
     color: white;
     font-size: 1em;
     text-decoration: none;
-    padding-top: 4px;
     transition: .5s;
     position: absolute;
     transform: translateX(10px);
+
+    & span.content-amb {
+        padding-left: 21px;
+    }
 }
+
+.materiais span.list {
+    padding-right: 10px;
+    color: rgba(218, 3, 3, 0.977);
+}
+
 
 .materiais a:hover {
     color: rgba(218, 3, 3, 0.977);
     transition: .3s;
+
+    & span.list {
+        color: white;
+        transition: .3s;
+    }
 }
 
 
