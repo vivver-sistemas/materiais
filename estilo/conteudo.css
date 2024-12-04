@@ -34,7 +34,6 @@
     }
 }
 
-
 body, html {
     background-color: black;
     height: 700px;
@@ -127,10 +126,34 @@ div.materiais {
 }
 
 #card-document {
-    height: 200px;
-    width: 350px;
+    height: 180px;
+    width: 340px;
     }
 
+#card-esus {
+    height: 130px;
+    width: 300px;
+}
+
+#card-imunizacao {
+    height: 80px;
+    width: 230px;
+}
+
+#card-seguranca {
+    height: 80px;
+    width: 260px;
+}
+
+#card-servico {
+    height: 80px;
+    width: 240px;
+}
+
+#card-tablet {
+    height: 130px;
+    width: 310px;
+}
 
 #content-amb {
     padding-top: 13px;
@@ -147,18 +170,52 @@ div.materiais {
 }
 
 #content-documentos {
-    height: 200px;
-    padding-top: 17px;
+    padding-top: 7px;
 
     & p {
         margin-bottom: 15px;
     }
 
     & #p-document {
-        margin-bottom: 30px;
+        margin-bottom: 32px;
     }
 }
 
+#content-esus {
+    padding-top: 6px;
+
+    & p {
+        margin-bottom: 12px;
+    }
+
+    & #p-esus {
+        padding-bottom: 25px;
+    }
+}
+
+#content-imunizacao {
+    padding-top: 15px;
+}
+
+#content-pe {
+    padding-top: 8px;
+
+    & p {
+        margin-bottom: 12px;
+    }
+}
+
+#content-seguranca {
+    padding-top: 17px;
+}
+
+#content-tablet {
+    padding-top: 8px;
+    
+    & p {
+        margin-bottom: 15px;
+    }
+}
 
 div.materiais p {
     color: rgba(218, 3, 3, 0.977);
