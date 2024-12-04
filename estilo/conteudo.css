@@ -20,17 +20,39 @@
     padding: 0px;
 }
 
+@keyframes animacao {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animarcontent {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 body, html {
-    background-color: #0c75d6;
-    height: 100vh;
+    background-color: black;
+    height: 700px;
 }
 
 header {
-    background-image:linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-color: black;
 }
 
 header p {
+    max-width: 90%;
     text-align: center;
+    border-bottom: 1px solid white;
+    margin: auto;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 header img {
@@ -39,23 +61,17 @@ header img {
 }
 
 main {
-    height: 900px;
-    min-width: 300px;
-    max-width: 800px;
-    background-color: white;
-    margin: 0px 2px 0px 2px;
-    margin: auto;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.422);
+    background-color: black;
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 72px;
 }
 
 main p {
     text-align: center;
-    padding-top: 20px;
+    padding: 10px 0px 10px 0px;
 }
 
-main img {
-    width: 180px;
-}
 
 main h1 {
     font-family: var(--fonte2);
@@ -68,35 +84,71 @@ main h1 {
 
 div.modulo {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(222, 11, 11);
+    color: rgba(218, 3, 3, 0.977);
     font-size: 2em;
     font-weight: bold;
     text-align: center;
     text-decoration-line: underline overline;
-    padding-top: 30px;
+    padding-top: 150px;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform: translateX(-20px);
+    opacity: 0;
 }
 
-div.imagem p {
-    padding-top: 80px;
-}
+
 
 div.materiais {
+    background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 1em;
-    margin: auto;
-    margin-top: 15px;
+    height: 150px;
+    width: 400px;
+    margin: 50px auto 0px;
+    border-left: 2px solid var(--cor1);
+    border-right: 2px solid var(--cor1);
+    border-radius: 20px;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform: translateX(-40px);
+    opacity: 0;
+}
+
+#contentbi {
+    padding-top: 60px;
+}
+
+#document-item {
+    padding-bottom: 25px;
+}
+
+#content-documentos {
+    height: 200px;
 }
 
 div.materiais p {
+    color: rgba(218, 3, 3, 0.977);
     text-align: left;
+    padding-top: 12.4px;
     padding-left: 30px;
 }
 
 div.materiais a {
-    color: var(--cor1);
+    color: white;
     font-size: 1em;
     text-decoration: none;
+    transition: .5s;
+    position: absolute;
+    transform: translateX(10px);
+}
+
+.materiais a:hover {
+    color: rgba(218, 3, 3, 0.977);
+    font-size: 1.1em;
+    transition: .3s;
 }
 
 div.materiais span {
@@ -105,32 +157,42 @@ div.materiais span {
 
 div.modulos p {
     background-color: rgb (0, 0, 0, 0);
-    text-align: center;
-    margin-top: 120px;
     border: none;
+    padding-top: 150px;
 }
 
 div.modulos a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border: none;
-    color: var(--cor1);
+    color: rgba(218, 3, 3, 0.977);
+    transition: .5s;
+    text-decoration: none;
 }
 
 div.modulos a:hover {
     color: rgba(218, 3, 3, 0.977);
+    font-size: 1.1em;
+    text-decoration: underline;
 }
 
 footer {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-color: black;
     color: white;
     font-family: var(--fonte1);
     text-align: center;
-    padding: 10px;
-}
 
-footer a {
-    font-family: var(--fonte1);
-    color: white;
-    text-decoration: none;
-}
+    & p {
+        max-width: 90%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
+        border-top: 1px solid white;
+    }
+
+    & a {
+            font-family: var(--fonte1);
+            color: white;
+            text-decoration: none;
+        }
+    }
