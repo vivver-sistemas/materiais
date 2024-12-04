@@ -103,10 +103,10 @@ div.materiais {
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 1em;
+    font-size: 0.9em;
     height: 150px;
     width: 350px;
-    margin: 50px auto 0px;
+    margin: 100px auto 0px;
     border-left: 2px solid var(--cor1);
     border-right: 2px solid var(--cor1);
     border-radius: 20px;
@@ -117,8 +117,11 @@ div.materiais {
     opacity: 0;
 }
 
+
 #contentbi {
-    padding-top: 60px;
+    padding-top: 10px;
+    height: 80px;
+    margin-top: 120px;
 }
 
 #document-item {
@@ -129,17 +132,19 @@ div.materiais {
     height: 200px;
 }
 
+
 div.materiais p {
     color: rgba(218, 3, 3, 0.977);
     text-align: left;
-    padding-top: 12.4px;
-    padding-left: 30px;
+    padding-top: 13px;
+    padding-left: 15px;
 }
 
 div.materiais a {
     color: white;
     font-size: 1em;
     text-decoration: none;
+    padding-top: 4px;
     transition: .5s;
     position: absolute;
     transform: translateX(10px);
@@ -147,18 +152,19 @@ div.materiais a {
 
 .materiais a:hover {
     color: rgba(218, 3, 3, 0.977);
-    font-size: 1.1em;
     transition: .3s;
 }
 
-div.materiais span {
-    padding-left: 18px;
-}
 
 div.modulos p {
     background-color: rgb (0, 0, 0, 0);
     border: none;
     padding-top: 150px;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform: translateX(-20px);
+    opacity: 0;
 }
 
 div.modulos a{
@@ -168,12 +174,12 @@ div.modulos a{
     color: rgba(218, 3, 3, 0.977);
     transition: .5s;
     text-decoration: none;
+
 }
 
 div.modulos a:hover {
     color: rgba(218, 3, 3, 0.977);
     font-size: 1.1em;
-    text-decoration: underline;
 }
 
 footer {
