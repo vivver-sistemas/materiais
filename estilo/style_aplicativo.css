@@ -21,45 +21,80 @@
 }
 
 body, html {
-    background-color: #0c75d6;
-    height: 100vh;
+    background-color: black; 
+    height: 700px;
+}
+
+
+@keyframes animacao {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animarcontent {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+body, html {
+    background-color: black; 
+    height: 700px;
 }
 
 header {
-    background-image:linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-color: black;
 }
 
 header p {
+    max-width: 90%;
     text-align: center;
+    border-bottom: 1px solid white;
+    margin: auto;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 header img {
     max-width: 100%;
-
 }
 
 main {
-    height: 930px;
-    min-width: 300px;
-    max-width: 800px;
-    background-color: white;
-    margin: 0px 2px 0px 2px;
-    margin: auto;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.422);
+    background-color: black;
+    height: 100%;
+    padding-bottom: 72px;
 }
 
 main h1 {
     font-family: var(--fonte2);
-    color: var(--cor1);
-    font-size: 2.5em;
+    color: white;
+    font-size: 2em;
     text-align: center;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.353);
     padding: 20px 20px 0px 20px
 }
 
+
+#card-ace {
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+    margin: 40px auto 0px auto;
+    border-top: 3px solid rgba(218, 3, 3, 0.977);
+    border-bottom: 5px solid rgba(218, 3, 3, 0.977);
+
+}
+
 div.modulo {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(222, 11, 11);
+    color: rgba(218, 3, 3, 0.977);
     font-size: 2em;
     font-weight: bold;
     text-align: center;
@@ -67,11 +102,12 @@ div.modulo {
     padding-top: 60px;
 }
 
-div.imagem {
+div.content-aplicativo {
+    background-color: transparent;
     text-align: center;
 }
 
-div.imagem img {
+div.content-aplicativo img {
     max-width: 220px;
 }
 
@@ -87,7 +123,7 @@ div.link a {
     color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    box-shadow: 0px 0px 10px #0d8aff;
 }
 
 div.link a:hover {
@@ -100,11 +136,11 @@ div.link a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .text-link{
-    color:  var(--cor1);
+    color:  rgba(218, 3, 3, 0.977);
     font-family: var(--fonte1);
     font-size: 1em;
     font-weight: bold;
@@ -112,8 +148,8 @@ div.link a:hover {
 }
 
 form {
-    border: 2px solid #fff;
-    box-shadow: 0 15px 20px #fff;
+    border: 2px solid black;
+    box-shadow: 0 15px 20px black;
     padding: 2px 5px;
     border-radius: 1px;
     display: flex;
@@ -123,13 +159,14 @@ form {
 }
 
 .textToCopy {
+    color: white;
     width: 350px;
     font-size: 1em;
     text-align: center;
     border: none;
     border-radius: 1px;
     outline: none;
-    background-color: #fff;
+    background-color: black;
     font-weight: bold;
 }
 
@@ -137,11 +174,11 @@ form {
     width: 80px;
     height: 30px;
     font-size: 0.9em;
-    border: 3px solid var(--cor2);
+    border: 3px solid rgba(218, 3, 3, 0.977);
     background-color: transparent;
     border-radius: 20px 20px;
     padding: 5px;
-    color: var(--cor2);
+    color: rgba(218, 3, 3, 0.977);
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
@@ -153,33 +190,45 @@ form {
 }
 
 div.modulos {
-    margin-top: 130px;
+    margin-top: 40px;
 }
 
 div.modulos p {
     text-align: center;
 }
 
-div.modulos a {
+div.modulos a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: var(--cor1);
+    border: none;
+    color: rgba(218, 3, 3, 0.977);
+    transition: .5s;
+    text-decoration: none;
+
 }
 
 div.modulos a:hover {
     color: rgba(218, 3, 3, 0.977);
+    font-size: 1.1em;
 }
 
 footer {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-color: black;
     color: white;
     font-family: var(--fonte1);
     text-align: center;
-    padding: 10px;
-}
 
-footer a {
-    font-family: var(--fonte1);
-    color: white;
-    text-decoration: none;
-}
+    & p {
+        max-width: 90%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
+        border-top: 1px solid white;
+    }
+
+    & a {
+            font-family: var(--fonte1);
+            color: white;
+            text-decoration: none;
+        }
+    }
