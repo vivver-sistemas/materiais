@@ -116,6 +116,10 @@ main h1 {
     margin-top: 100px;
 }
 
+#content-modulos-esf {
+    margin-top: 60px;
+}
+
 div.modulo {
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(218, 3, 3, 0.977);
@@ -141,6 +145,12 @@ div.aplicativo {
 
 div.aplicativo img {
     max-width: 180px;
+}
+
+#esf {
+    max-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 div.link {
@@ -248,6 +258,10 @@ div.modulos a{
 div.modulos a:hover {
     color: rgba(218, 3, 3, 0.977);
     font-size: 1.1em;
+}
+
+#mod-esf {
+
 }
 
 footer {
