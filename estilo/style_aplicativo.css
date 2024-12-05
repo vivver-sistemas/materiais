@@ -43,7 +43,7 @@ body, html {
 
 body, html {
     background-color: black; 
-    height: 700px;
+    height: 800px;
 }
 
 header {
@@ -73,23 +73,35 @@ main {
 
 main h1 {
     font-family: var(--fonte2);
-    color: white;
-    font-size: 2em;
+    font-size: 1.9em;
+    color: #0978df;
     text-align: center;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.353);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.353);
     padding: 20px 20px 0px 20px
 }
 
 
 #card-ace {
     background-color: rgb(0, 0, 0);
-    height: 400px;
+    height: 380px;
     width: 350px;
     border-radius: 30px;
     margin: 40px auto 0px auto;
     border-top: 3px solid rgba(218, 3, 3, 0.977);
     border-bottom: 5px solid rgba(218, 3, 3, 0.977);
+}
 
+#content-aplicativo {
+    background-color: transparent;
+    height: 370px;
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+#content-modulos-app {
+    margin-top: 100px;
 }
 
 div.modulo {
@@ -102,13 +114,13 @@ div.modulo {
     padding-top: 60px;
 }
 
-div.content-aplicativo {
+div.aplicativo {
     background-color: transparent;
     text-align: center;
 }
 
-div.content-aplicativo img {
-    max-width: 220px;
+div.aplicativo img {
+    max-width: 180px;
 }
 
 div.link {
@@ -124,11 +136,12 @@ div.link a {
     padding: 15px 15px 15px 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #0d8aff;
+    transition: .3s;
 }
 
 div.link a:hover {
     background-color: #0d8aff;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
+    box-shadow: 0px 0px 10px #47a3f9;
 }
 
 .container {
@@ -136,7 +149,7 @@ div.link a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .text-link{
