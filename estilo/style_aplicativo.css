@@ -145,12 +145,12 @@ div.aplicativo {
 
 div.aplicativo img {
     max-width: 180px;
+    margin-left: 7px;
 }
 
 #esf {
-    max-width: 150px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    max-width: 200px;
+    margin-bottom: 0px;
 }
 
 div.link {
