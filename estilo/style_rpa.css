@@ -68,7 +68,7 @@ header img {
 main {
     background-color: black;
     height: 100%;
-    padding-bottom: 250px;
+    padding-bottom: 70px;
 }
 
 main h1 {
@@ -122,15 +122,6 @@ main h1 {
         max-width: 350px;
         margin: auto;
     }
-
-    & p{
-        text-align: center;
-    }
-
-    & video{
-        max-width: 350px;
-        margin-top: 50px
-    }
 }
 
 #content-modulos-app {
@@ -139,6 +130,10 @@ main h1 {
 
 #content-modulos-esf {
     margin-top: 60px;
+}
+
+#mod-esf {
+    margin-top: 120px;
 }
 
 div.modulo {
@@ -166,7 +161,7 @@ div.aplicativo {
 
 div.aplicativo img {
     max-width: 180px;
-    margin-left: 2px;
+    margin-left: 8px;
     border-radius: 20px;
     margin-top: 10px;
 }
