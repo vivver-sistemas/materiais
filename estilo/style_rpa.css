@@ -68,7 +68,7 @@ header img {
 main {
     background-color: black;
     height: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 450px;
 }
 
 main h1 {
@@ -121,6 +121,13 @@ main h1 {
         color: white;
         max-width: 350px;
         margin: auto;
+        margin-bottom: 40px;
+    }
+    & iframe{
+        max-width: 350px;
+    }
+    & p{
+        text-align: center;
     }
 }
 
